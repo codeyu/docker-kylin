@@ -1,8 +1,8 @@
 : ${NODE_PREFIX=amb}
 : ${AMBARI_SERVER_NAME:=${NODE_PREFIX}0}
 : ${MYDOMAIN:=mycorp.kom}
-: ${IMAGE:="codeyu/kylin:2.0.0"}
-: ${DOCKER_OPTS:="--dns 127.0.0.1 --entrypoint /usr/local/serf/bin/start-serf-agent.sh -e KEYCHAIN=$KEYCHAIN"}
+: ${IMAGE:="codeyu/docker-kylin:2.0.0"}
+: ${DOCKER_OPTS:="--dns 127.0.0.1 --entrypoint /start-server -e KEYCHAIN=$KEYCHAIN"}
 : ${CLUSTER_SIZE:=1}
 : ${DEBUG:=1}
 : ${SLEEP_TIME:=2}
