@@ -1,4 +1,4 @@
-FROM sequenceiq/ambari:2.2.0-v2
+FROM gerencio/docker-ambari:2.2.0-kylin
 MAINTAINER SequenceIQ
 
 RUN curl -sL http://mirrors.tuna.tsinghua.edu.cn/apache/kylin/apache-kylin-2.0.0/apache-kylin-2.0.0-bin-hbase1x.tar.gz | tar -xz -C /usr/local
